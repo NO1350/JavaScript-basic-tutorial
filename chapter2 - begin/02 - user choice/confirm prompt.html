@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        function userConfirm(){
+            //确认用户的选择
+            if(confirm("Are you sure you want to do that?")){
+                alert("You said yes");
+            }else{
+                alert("You said no");
+            }
+        }
+        function userPrompt(){
+            //提示用户做出响应
+            var ans=prompt("Are you sure you want to do that?","");
+            if(ans){
+                alert("You said "+ans);
+            }else{
+                alert("You refused to answer");
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="confirm" onclick="userConfirm()"/>
+<input type="button" value="prompt" onclick="userPrompt()"/>
+</body>
+</html>

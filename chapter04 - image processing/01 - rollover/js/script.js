@@ -9,10 +9,18 @@ function rolloverInit(){
 }
 
 function setupRollover(thisImage){
+
     thisImage.outImage=new Image();
     thisImage.outImage.src=thisImage.src;
     thisImage.onmouseout=function(){
         this.src=this.outImage.src;
+    }
+
+    //构建三状态翻转器
+    thisImage.clickImage=new Image();
+    thisImage.clickImage.src="images/"+thisImage.id+"_click.gif";
+    thisImage.onclick=function(){
+        this.src=this.clickImage.src;
     }
 
     thisImage.overImage=new Image();

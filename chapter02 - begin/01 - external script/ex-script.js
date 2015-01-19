@@ -1,6 +1,4 @@
-/**
- * Created by crixalis on 15-1-18.
- */
+
 /*
  This is an example of a long JavaScript comment.Note the
  characters at the beginning and ending if the comment.
